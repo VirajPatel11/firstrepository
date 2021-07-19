@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		h1{text-align: center;}
+	    
+	    h3{text-align: center;}
+
+
+	</style>
+	<meta charset="utf-8">
+	<title>FORM</title>
+</head>
+<body>
+	<h1>FORM</h1>
+	<hr>
+	
+	<h3 >WELCOME TO THE PAYMENT PAGE</h3>
+	<hr><br>
+	<form>
+		<p>FIRST NAME&nbsp:&nbsp&nbsp<input type="text" name="fname" required maxlength="5"></p>
+		
+		<p>LAST NAME :     &nbsp          <input type="text" name="lname" required minlength="3"></p>
+		<fieldset>
+			<legend>GENDER</legend>
+		<p>
+			MALE : <input type="radio" name="gender" id="male">
+			FEMALE : <input type="radio" name="gender" id="female">
+
+			
+
+		</p>
+		</fieldset>
+		<p>
+			ADDRESS : <textarea name="address" required rows="5" cols="15">
+			</textarea>
+		</p>
+		<p>EMAIL : <input type="email" name="email">
+		</p>
+		<hr>
+		<h3>PAYMENT INFORMATION</h3>
+		<hr>
+		<p>
+			CARD TYPE : 
+			<select name="card" disabled>
+				<option value="4">--Select a card type--</option>
+				<option value="2">Rupay</option>
+				<option value="3">Visa card</option>
+				<option value="1" selected>Master card</option>
+			</select>
+		</p>
+		<p>
+			CARD NUMBER : 
+			<input type="password" name="cnumb" id="cnumb" required="this is required feild" maxlength="13" minlength="12">
+		</p>
+		<p>
+			CARD HOLDER NAME : <input type="text" name="cname">
+		</p>
+		<p>
+			DATE OF EXPIRY : <input type="date" name="edate" id="edate" >
+		</p>
+		<p>
+			CVV : <input type="password" name="cpassword" id="cpassword" required>
+		</p>
+		<input type="submit" value="Pay now">
+			
+
+</body>
+</html>
